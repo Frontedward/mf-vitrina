@@ -36,13 +36,6 @@ const ThemeSelector: React.FC<ThemeSelectorProps> = ({ onThemeChange }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-      <label htmlFor="theme-select" style={{ 
-        fontSize: '0.9rem', 
-        color: 'var(--text-secondary, #666666)',
-        fontWeight: '500'
-      }}>
-        Тема оформления:
-      </label>
       <select
         id="theme-select"
         value={selectedTheme}
@@ -58,8 +51,8 @@ const ThemeSelector: React.FC<ThemeSelectorProps> = ({ onThemeChange }) => {
           minWidth: '200px',
         }}
       >
-        <option value="light">День</option>
-        <option value="dark">Ночь</option>
+        <option value="light">светлая</option>
+        <option value="dark">тёмная</option>
       </select>
     </div>
   );

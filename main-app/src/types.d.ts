@@ -28,6 +28,7 @@ declare module 'source_mf/SourceSelector' {
     
     interface CardsListProps {
       dataSource?: DataSource;
+      theme?: Theme;
     }
     
     const CardsList: ComponentType<CardsListProps>;

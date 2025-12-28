@@ -36,13 +36,6 @@ const SourceSelector: React.FC<SourceSelectorProps> = ({ onSourceChange }) => {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-      <label htmlFor="source-select" style={{ 
-        fontSize: '0.9rem', 
-        color: 'var(--text-secondary, #666666)',
-        fontWeight: '500'
-      }}>
-        Источник данных:
-      </label>
       <select
         id="source-select"
         value={selectedSource}
@@ -58,8 +51,8 @@ const SourceSelector: React.FC<SourceSelectorProps> = ({ onSourceChange }) => {
           minWidth: '200px',
         }}
       >
-        <option value="quotes">Цитаты</option>
-        <option value="todos">Задачи</option>
+        <option value="quotes">цитаты</option>
+        <option value="todos">задачи</option>
       </select>
     </div>
   );

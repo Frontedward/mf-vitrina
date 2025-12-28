@@ -6,10 +6,12 @@ declare global {
       'quote-card': {
         ref?: React.Ref<any>;
         quote?: Quote;
+        theme?: Theme;
       };
       'todo-card': {
         ref?: React.Ref<any>;
         todo?: Todo;
+        theme?: Theme;
       };
     }
   }
