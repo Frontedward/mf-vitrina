@@ -29,7 +29,7 @@ export class QuoteCard extends LitElement {
     }
 
     .content {
-      padding-top: 2rem;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;

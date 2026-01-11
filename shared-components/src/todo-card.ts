@@ -26,6 +26,10 @@ export class TodoCard extends LitElement {
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     }
 
+    .content {
+      padding: 1rem;
+    }
+
     .title {
       font-size: 1.4rem;
       font-weight: 700;
@@ -86,6 +90,7 @@ export class TodoCard extends LitElement {
     const icon = this.todo.completed ? '✅' : '🕗';
 
     return html`
+    <div class="content">  
       <div class="title">Todo</div>
       <div class="id">ID: ${this.todo.id}</div>
       <div class="todo-text ${status}">
@@ -97,6 +102,7 @@ export class TodoCard extends LitElement {
           <span>${status}</span>
         </div>
       </div>
+    </div>
     `;
   }
 }
