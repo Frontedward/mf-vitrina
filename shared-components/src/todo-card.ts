@@ -79,11 +79,6 @@ export class TodoCard extends LitElement {
     }
   `;
 
-  // отключаем Shadow DOM для наследования CSS переменных
-  createRenderRoot() {
-    return this;
-  }
-
   render() {
     if (!this.todo) return html``;
 

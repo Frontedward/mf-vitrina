@@ -59,11 +59,6 @@ export class QuoteCard extends LitElement {
     }
   `;
 
-  // отключаем Shadow DOM для наследования CSS переменных
-  createRenderRoot() {
-    return this;
-  }
-
   render() {
     if (!this.quote) return html``;
 
